@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Personal Portfolio</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" type="text/css" href="./style.css"/>
-    </head>
-    <body>
-        <header>
-            <h1>Ike Nwachukwu</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <aside>
+<head>
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Ike Nwachukwu</h1>
+        <div class="nav">
+            <a href="#about" class="btn">About Me</a>
+            <a href="#work" class="btn">Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#resume" class="btn">Resume</a>
+        </div>
+
+    </header>
+
+    <container>
+        <div class="row">
+            <div class="col1 aside one" id="about">
                 <h2>About Me</h2>
-            </aside>
-
-            <section>
+            </div>
+            <div class="col2 section">
                 <p>
-                    I am a new Web Developer who completed the University of Texas 
-                    at Austin Coding Bootcamp.
+                    I am a new Web Developer who completed the University of Texas at Austin Coding Bootcamp. I have
+                    training in Front End and Back End coding
                 </p>
-            </section>
-        </main>
-
-        <main>
-            <aside>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1 aside two" id="work">
                 <h2>Work</h2>
-            </aside>
+            </div>
 
-            <section>
+            <div class="col2 section">
                 <p>
                     This is my collection of work.
                 </p>
-            </section>
-        </main>
+            </div>
+        </div>
 
-        <main>
-            <aside>
+        <div class="row">
+            <div class="col1 aside" id="contact">
                 <h2>Contact Me</h2>
-            </aside>
+            </div>
 
-            <section>
+            <div class="col2 section">
                 <p>
                     Phone Email Github
                 </p>
-            </section>
-        </main>
+            </div>
+        </div>
 
-        <main>
-            <aside>
+        <div class="row">
+            <div class="col1 aside four" id="resume">
                 <h2>Resume</h2>
-            </aside>
+            </div>
 
-            <section>
+            <div class="col2 section">
                 <p>
                     Resume Placeholder
                 </p>
-            </section>
-        </main>
+            </div>
+        </div>
+    </container>
 
 
-    </body>
-    
+</body>
+
 </html>

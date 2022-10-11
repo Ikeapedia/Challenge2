@@ -1,9 +1,8 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 body {
-    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     line-height: 1.3;
@@ -16,7 +15,49 @@ header{
     padding: 1%;
     background-color: navy;
     color: white;
-    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.col1 {
+    border-right: 4px solid black;
+    width: 15%;
+}
+
+.col2 {
+    width: 65%;
+}
+
+.nav {
+    background-color: unset;
+    overflow: auto;
+    justify-content: end;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+    flex: auto;
+  }
+
+
+.btn {
+    color: white;
+    background-color: unset;
+    height: 60px;
+    width: 90px;
+    padding: 2px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -24,51 +65,25 @@ main {
     flex-wrap: wrap;
 }
 
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1 {
     font-size: 200%;
 }
 
-h2 {
-    margin: 2% 0;
-    font-size: 250%;
-}
 
-aside {
-    box-sizing: content-box;
-    width: 20%;
-    flex: 1;
-    padding: 20px;
-}
-
-section {
-    box-sizing: content-box;
-    width: 80%;
-    padding: 20px;
-    margin-top: auto;
-}
-
-
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 400px;
-
-}
-
-nav a {
-    color: white;
-    background-color: unset;
-    font-weight: bold;
-    text-decoration: none;
-
-}
-
-nav a:hover {
-    color: lightblue;
+.section {
+    flex: 3;
+    /* width: 80%; */
+    height: 30vh;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 10px 5px;
+    float: right;
 }
 
 
